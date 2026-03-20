@@ -3,13 +3,11 @@ import { Route, Routes } from "react-router";
 import Homepage from "./pages/Homepage";
 import Createpage from "./pages/Createpage";
 import NoteDetailPage from "./pages/NoteDetailPage";
-import { toast, Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
-    <div>
-      <button onClick={() => toast.success("Congrats")}>click me</button>
-
+    <div data-theme="business">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/create" element={<Createpage />} />
