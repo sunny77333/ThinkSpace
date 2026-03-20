@@ -6,7 +6,7 @@ import RateLimitedUI from "../components/RateLimitedUI";
 import NoteCard from "../components/NoteCard";
 
 const HomePage = () => {
-  const [isRateLimited, setIsRateLimited] = useState(true);
+  const [isRateLimited, setIsRateLimited] = useState(false);
   const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -48,7 +48,7 @@ const HomePage = () => {
         {notes.length > 0 && !isRateLimited && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {notes.map((note) => (
-              <NoteCard key= {note.id} note={note} />
+              <NoteCard key= {note._id} note={note} />
             ))}
           </div>
         )}
