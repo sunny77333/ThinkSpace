@@ -1,0 +1,22 @@
+{
+  "name": "thinkspace",
+  "version": "1.0.0",
+  "description": "ThinkSpace is a full-stack note-taking web application that allows users to create, edit, and manage notes through a clean and responsive interface.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunny77333/ThinkSpace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sunny77333/ThinkSpace/issues"
+  },
+  "homepage": "https://github.com/sunny77333/ThinkSpace#readme"
+}
